@@ -1,0 +1,46 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.about__item {
+  max-width: 608px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about__item--heading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+
+  color: #212529;
+}
+
+.about__item--text {
+  max-width: 608px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #212529;
+}
+
+.about__item--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
