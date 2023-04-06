@@ -8,14 +8,38 @@
   letter-spacing: -0.05rem;
 }
 
-.recording__button {
-  margin-top: 50px;
-}
-
-.personal__theraphy {
-  padding-top: 70px;
-}
-
 .myHelp__cards {
-  padding-top: 70px;
+  padding-top: 10px;
+  @include mobile {
+    padding-top: 0;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../../img/icons/arrow-left.png);
+}
+
+.carousel-control-prev {
+  left: -4em;
+
+  @include mobile {
+    left: 0;
+  }
+}
+
+.carousel-control-next-icon {
+  background-image: url(../../img/icons/arrow-right.png);
+}
+
+.carousel-control-next {
+  right: -4em;
+
+  @include mobile {
+    right: 0;
+  }
+}
+
+.education__background {
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
