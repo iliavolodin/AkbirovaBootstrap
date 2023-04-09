@@ -12797,7 +12797,7 @@ a:hover {
 }
 
 .carousel-control-prev-icon {
-  background-image: url(../../img/icons/arrow-left.png);
+  background-image: url("../img/icons/arrow-left.png");
 }
 
 .carousel-control-prev {
@@ -12810,7 +12810,7 @@ a:hover {
 }
 
 .carousel-control-next-icon {
-  background-image: url(../../img/icons/arrow-right.png);
+  background-image: url("../img/icons/arrow-right.png");
 }
 
 .carousel-control-next {
@@ -12868,20 +12868,72 @@ a:hover {
 .gps {
   padding-bottom: 1em;
 }
-
 .whatsapp {
   padding-right: 1em;
   padding-bottom: 1em;
+}
+@media (max-width: 575.98px) {
+  .whatsapp {
+    padding-right: 2em;
+    padding-bottom: 2em;
+  }
 }
 
 .telegram {
   padding-right: 1em;
   padding-bottom: 1em;
 }
+@media (max-width: 575.98px) {
+  .telegram {
+    padding-right: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .gps__text {
+    padding-right: 2.5em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .whatsapp__text {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .telegram__text {
+    margin-left: 2em;
+  }
+}
 
 @media (max-width: 575.98px) {
   .social {
     text-align: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wrapper__reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact__wrapper--map {
+    padding-left: 1.5em;
+    padding-top: 2.5em;
+    padding-right: 1.5em;
+  }
+}
+
+.contacts__writeto {
+  padding-left: 8.5em;
+}
+@media (max-width: 575.98px) {
+  .contacts__writeto {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
