@@ -1,0 +1,42 @@
+.col-10 {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.theraphy {
+  @include mobile {
+    margin-top: -6em;
+  }
+}
+
+.personal__theraphy {
+  padding-top: 70px;
+
+  @include mobile {
+    padding-top: 1.5em;
+  }
+}
+
+.recording__button {
+  margin-top: 50px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+}
+
+.aboutme {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.card__wrapper {
+  margin-top: 2em;
+}
+
+.author__text {
+  @include mobile {
+    text-align: center;
+  }
+}
