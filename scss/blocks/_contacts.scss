@@ -60,76 +60,81 @@
   background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
 }
 
-.gps {
-  padding-bottom: 1em;
-
+.social__gps {
+  padding-top: 40px;
   @include mobile {
+    padding-top: 0;
   }
 }
 
-.whatsapp {
-  padding-right: 1em;
-  padding-bottom: 1em;
-
+.social__whatsapp {
+  padding-top: 40px;
   @include mobile {
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-top: 10px;
   }
 }
 
-.telegram {
-  padding-right: 1em;
-  padding-bottom: 1em;
-
+.social__telegram {
+  padding-top: 40px;
   @include mobile {
-    padding-right: 2em;
-    padding-bottom: 2em;
-  }
-}
-
-.gps__text {
-  @include mobile {
-    padding-right: 2.5em;
+    padding-top: 10px;
   }
 }
 
 .whatsapp__text {
+  position: relative;
+}
+
+.whatsapp__text::before {
+  width: 64px;
+  height: 64px;
+  content: "";
+  background-image: url(../img/icons/whatsapp.png);
+  position: absolute;
+  left: 1px;
+  bottom: 7px;
+  margin-left: 160px;
   @include mobile {
-    margin-left: 2em;
+    margin: 0;
+    left: 62px;
   }
 }
 
 .telegram__text {
+  position: relative;
+}
+
+.telegram__text::before {
+  width: 64px;
+  height: 64px;
+  content: "";
+  background-image: url(../img/icons/telegram.png);
+  position: absolute;
+  left: 1px;
+  bottom: 7px;
+  margin-left: 160px;
   @include mobile {
-    margin-left: 2em;
+    margin: 0;
+    left: 60px;
   }
 }
 
-.social {
+.contacts__writeto {
+  padding-top: 50px;
   @include mobile {
-    text-align: center;
-    align-items: center;
+    padding-top: 15px;
   }
 }
 
 .wrapper__reverse {
   @include mobile {
+    display: flex;
     flex-direction: column-reverse;
   }
 }
 
 .contact__wrapper--map {
   @include mobile {
-    padding-left: 1.5em;
-    padding-top: 2.5em;
-    padding-right: 1.5em;
-  }
-}
-
-.contacts__writeto {
-  padding-left: 8.5em;
-
-  @include mobile {
-    padding: 0;
+    padding: 2em;
   }
 }

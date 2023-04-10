@@ -363,30 +363,6 @@ footer-20192 {
     }
   }
 
-  .social {
-    li {
-      display: inline-block;
-      position: relative;
-      a {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        background-color: #8186d5;
-        color: #fff;
-        > span {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-  }
-
   .footer-logo {
     color: $white;
     font-size: 20px;

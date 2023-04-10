@@ -31,6 +31,10 @@
   padding-bottom: 2em;
 }
 
+.aboutme__text {
+  margin-top: 1em;
+}
+
 .card__wrapper {
   margin-top: 2em;
 }
@@ -39,4 +43,9 @@
   @include mobile {
     text-align: center;
   }
+}
+
+.offline__link {
+  color: inherit;
+  text-decoration: underline;
 }
