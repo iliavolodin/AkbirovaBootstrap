@@ -6002,8 +6002,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11797,6 +11796,10 @@ textarea.form-control-lg {
   padding-bottom: 2em;
 }
 
+.aboutme__text {
+  margin-top: 1em;
+}
+
 .card__wrapper {
   margin-top: 2em;
 }
@@ -11805,6 +11808,11 @@ textarea.form-control-lg {
   .author__text {
     text-align: center;
   }
+}
+
+.offline__link {
+  color: inherit;
+  text-decoration: underline;
 }
 
 .navbar__color {
@@ -12393,27 +12401,6 @@ footer-20192 .links li a {
 footer-20192 .links li a:hover {
   color: #fff;
 }
-footer-20192 .social li {
-  display: inline-block;
-  position: relative;
-}
-footer-20192 .social li a {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  background-color: #8186d5;
-  color: #fff;
-}
-footer-20192 .social li a > span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 footer-20192 .footer-logo {
   color: #fff;
   font-size: 20px;
@@ -12584,7 +12571,6 @@ a:hover {
 
 .flip-cards .card-front,
 .flip-cards .card-back {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s;
   display: block;
@@ -12865,75 +12851,141 @@ a:hover {
   background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
 }
 
-.gps {
-  padding-bottom: 1em;
-}
-.whatsapp {
-  padding-right: 1em;
-  padding-bottom: 1em;
+.social__gps {
+  padding-top: 40px;
 }
 @media (max-width: 575.98px) {
-  .whatsapp {
-    padding-right: 2em;
-    padding-bottom: 2em;
+  .social__gps {
+    padding-top: 0;
   }
 }
 
-.telegram {
-  padding-right: 1em;
-  padding-bottom: 1em;
+.social__whatsapp {
+  padding-top: 40px;
 }
 @media (max-width: 575.98px) {
-  .telegram {
-    padding-right: 2em;
-    padding-bottom: 2em;
+  .social__whatsapp {
+    padding-top: 10px;
   }
 }
 
+.social__telegram {
+  padding-top: 40px;
+}
 @media (max-width: 575.98px) {
-  .gps__text {
-    padding-right: 2.5em;
+  .social__telegram {
+    padding-top: 10px;
   }
 }
 
+.whatsapp__text {
+  position: relative;
+}
+
+.whatsapp__text::before {
+  width: 64px;
+  height: 64px;
+  content: "";
+  background-image: url(../img/icons/whatsapp.png);
+  position: absolute;
+  left: 1px;
+  bottom: 7px;
+  margin-left: 160px;
+}
 @media (max-width: 575.98px) {
-  .whatsapp__text {
-    margin-left: 2em;
+  .whatsapp__text::before {
+    margin: 0;
+    left: 62px;
   }
 }
 
+.telegram__text {
+  position: relative;
+}
+
+.telegram__text::before {
+  width: 64px;
+  height: 64px;
+  content: "";
+  background-image: url(../img/icons/telegram.png);
+  position: absolute;
+  left: 1px;
+  bottom: 7px;
+  margin-left: 160px;
+}
 @media (max-width: 575.98px) {
-  .telegram__text {
-    margin-left: 2em;
+  .telegram__text::before {
+    margin: 0;
+    left: 60px;
   }
 }
 
+.contacts__writeto {
+  padding-top: 50px;
+}
 @media (max-width: 575.98px) {
-  .social {
-    text-align: center;
-    align-items: center;
+  .contacts__writeto {
+    padding-top: 15px;
   }
 }
 
 @media (max-width: 575.98px) {
   .wrapper__reverse {
+    display: flex;
     flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 575.98px) {
   .contact__wrapper--map {
-    padding-left: 1.5em;
-    padding-top: 2.5em;
-    padding-right: 1.5em;
+    padding: 2em;
   }
 }
 
-.contacts__writeto {
-  padding-left: 8.5em;
+@media (max-width: 575.98px) {
+  .desktop__navbar {
+    display: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .desktop__navbar {
+    display: none;
+  }
+}
+
+.navigation__toggler {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .navigation__toggler {
+    display: block;
+  }
+}
+
+.navigation__collapse {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .navigation__collapse {
+    display: block;
+  }
 }
 @media (max-width: 575.98px) {
-  .contacts__writeto {
-    padding: 0;
+  .navigation__collapse {
+    display: block;
+  }
+}
+
+.navigation__list {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .navigation__list {
+    display: block;
+  }
+}
+@media (max-width: 575.98px) {
+  .navigation__list {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.desktop__navbar {
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.navigation__toggler {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.navigation__collapse {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    display: block;
+  }
+}
+
+.navigation__list {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include mobile {
+    display: block;
+  }
+}
