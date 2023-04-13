@@ -17,17 +17,11 @@
   justify-content: center;
 }
 
-// @mixin tablet {
-//     @media (max-width: 1599px) {
-//         @content;
-//     }
-// }
-
-// @mixin mobile {
-//     @media (max-width: 376px) {
-//         @content;
-//     }
-// }
+@mixin tablet {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: 575.98px) {
@@ -35,8 +29,8 @@
   }
 }
 
-@mixin tablet {
-  @media (max-width: 991.98px) {
+@mixin mobileSmall {
+  @media (max-width: 375px) {
     @content;
   }
 }

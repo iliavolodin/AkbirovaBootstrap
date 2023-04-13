@@ -92,7 +92,7 @@
   <section id="section--1" class="author">
     <div class="container-xxl col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
+        <div class="col-10 col-sm-8 col-lg-6 author__wrapper">
           <img src="./img/copyauthor.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
             height="500" loading="lazy" />
         </div>
@@ -142,7 +142,7 @@
         </div>
       </div>
       <div class="d-grid gap-2 col-6 mx-auto recording__button">
-        <button class="btn btn-dark align-items-center text-center" type="button">
+        <button class="btn btn-dark align-items-center text-center" type="button" id="tg__link">
           <p class="lead">Записаться на приём</p>
         </button>
       </div>
@@ -179,7 +179,7 @@
 
           </ul>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 aboutme__img--wrapper">
           <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
             height="500" src="./img/author2-3.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" />
         </div>
@@ -331,36 +331,36 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="col-lg-12" id="section--7">
-                            <div class="d-flex flex-column bd-highlight">
-                              <div class="social__gps">
-                                <div class="gps__wrapper">
-                                  <h3>Адрес</h3>
-                                  <p class="gps__text lead"> г. Казань
-                                    ул. Николая Столбова, д.2</p>
-                                </div>
+                          <div class="d-flex flex-column bd-highlight">
+                            <div class="social__gps">
+                              <div class="gps__wrapper">
+                                <h3>Адрес</h3>
+                                <p class="gps__text lead"> г. Казань
+                                  ул. Николая Столбова, д.2</p>
                               </div>
-                              <div class="p-2 bd-highlight">
-                                <div class="social__whatsapp">
-                                  <div class="whatsapp__wrapper">
-                                    <h3>WhatsApp</h3>
-                                    <p class="whatsapp__text lead"> +7 123 456 789</p>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="p-2 bd-highlight">
-                                <div class="social__telegram">
-                                  <div class="telegram__wrapper">
-                                    <h3>Telegram</h3>
-                                    <p class="telegram__text lead"> @nickname </p>
-                                  </div>
+                            </div>
+                            <div class="p-2 bd-highlight">
+                              <div class="social__whatsapp">
+                                <div class="whatsapp__wrapper">
+                                  <h3>WhatsApp</h3>
+                                  <a href="https://api.whatsapp.com/send?phone=79503209074" target="_blank" class="contacts__whatsapp--link"> <p class="whatsapp__text fw-bold lead">+79503209074</p></a>
                                 </div>
                               </div>
                             </div>
+                            <div class="p-2 bd-highlight">
+                              <div class="social__telegram">
+                                <div class="telegram__wrapper">
+                                  <h3>Telegram</h3>
+                                 <a href="https://tlgg.ru/@r_abdulina" target="_blank" class="contacts__telegram--link"> <p class="telegram__text fw-bold lead">@r_abdulina</p> </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="form-group mt-2 contacts__writeto">
-                          <button class="btn btn-dark align-items-center text-center" type="button">
+                          <button class="btn btn-dark align-items-center text-center" id="small__linkTg" type="button">
                             <p class="lead">Записаться на приём</p>
                           </button>
                         </div>
@@ -384,7 +384,7 @@
 
         <div class="cellar__wrapper">
           <li class="cellar__links">
-            <a href="#" class="link_facebook">
+            <a href="https://tlgg.ru/@r_abdulina" target="_blank" class="link_telegram">
               <button class="cellar__button">
                 <img src="img/icons/telegramfooter.png" alt="иконка Telegram" />
               </button>
@@ -392,7 +392,7 @@
           </li>
 
           <li class="cellar__links">
-            <a href="#" class="link_instagram">
+            <a href="https://www.instagram.com/rezeda_abdulina" target="_blank" class="link_instagram">
               <button class="cellar__button">
                 <img src="img/instagram.svg" alt="иконка Instagram" />
               </button>
@@ -400,7 +400,7 @@
           </li>
 
           <li class="cellar__links">
-            <a href="#" class="link_twitter">
+            <a href="https://api.whatsapp.com/send?phone=79503209074" target="_blank" class="link_whatsapp">
               <button class="cellar__button">
                 <img src="img/icons/whatsappfooter.png" alt="иконка WhatsApp" />
               </button>
@@ -410,8 +410,12 @@
       </ul>
     </section>
   </footer>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
   <script src="./js/script.js"></script>
 </body>
 
