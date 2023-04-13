@@ -44,3 +44,14 @@
   justify-content: center;
   text-align: center;
 }
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.aboutme__img--wrapper {
+  @include tablet {
+    text-align: center;
+  }
+}

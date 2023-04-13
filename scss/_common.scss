@@ -24,12 +24,4 @@ a {
 .container {
   width: 71.3%;
   margin: 0 auto;
-
-  @media (max-width: $mobile-width) {
-    width: 97%;
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 97%;
-  }
 }

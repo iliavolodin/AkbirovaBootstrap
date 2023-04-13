@@ -28,7 +28,7 @@
 .navigation__list {
   display: none;
   @include tablet {
-    display: block;
+    display: contents;
   }
   @include mobile {
     display: block;

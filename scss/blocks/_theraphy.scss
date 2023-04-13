@@ -39,12 +39,6 @@
   margin-top: 2em;
 }
 
-.author__text {
-  @include mobile {
-    text-align: center;
-  }
-}
-
 .offline__link {
   color: inherit;
   text-decoration: underline;

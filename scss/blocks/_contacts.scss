@@ -62,6 +62,7 @@
 
 .social__gps {
   padding-top: 40px;
+
   @include mobile {
     padding-top: 0;
   }
@@ -69,6 +70,7 @@
 
 .social__whatsapp {
   padding-top: 40px;
+
   @include mobile {
     padding-top: 10px;
   }
@@ -76,6 +78,7 @@
 
 .social__telegram {
   padding-top: 40px;
+
   @include mobile {
     padding-top: 10px;
   }
@@ -93,10 +96,16 @@
   position: absolute;
   left: 1px;
   bottom: 7px;
-  margin-left: 160px;
+  margin-left: 25%;
+
   @include mobile {
     margin: 0;
-    left: 62px;
+    left: 10%;
+  }
+
+  @include mobileSmall {
+    margin: 0;
+    left: 1%;
   }
 }
 
@@ -112,10 +121,16 @@
   position: absolute;
   left: 1px;
   bottom: 7px;
-  margin-left: 160px;
+  margin-left: 25%;
+
   @include mobile {
     margin: 0;
-    left: 60px;
+    left: 10%;
+  }
+
+  @include mobileSmall {
+    margin: 0;
+    left: 1%;
   }
 }
 
@@ -137,4 +152,26 @@
   @include mobile {
     padding: 2em;
   }
+}
+
+.contacts__whatsapp--link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.contacts__whatsapp--link:active,
+.contacts__whatsapp--link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.contacts__telegram--link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.contacts__telegram--link:active,
+.contacts__telegram--link:hover {
+  text-decoration: none;
+  color: black;
 }
